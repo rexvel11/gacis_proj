@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJJ SHOE SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">RAJJ SHOE SHOP</div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search shoes...">
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            🛒 <span id="cartCount">0</span>
+        </div>
+    </nav>
+
+        <div id="heroSection"></div>
+
+    <div class="filters">
+        <div class="filter-group">
+            <label>Brand:</label>
+            <select id="brandFilter">
+                <option value="">All Brands</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Category:</label>
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+            </select>
+        </div>
+    </div>
+
+    <main id="mainContent"></main>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <h3>Total: ₱<span id="cartTotal">0</span></h3>
+                <button id="checkoutBtn">Proceed to Checkout</button>
+            </div>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
